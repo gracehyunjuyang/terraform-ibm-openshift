@@ -17,5 +17,6 @@ resource "ibm_compute_vm_instance" "appnode" {
   public_security_group_ids = ["${var.app_node_pub_sg}"]
   private_security_group_ids = ["${var.app_node_prv_sg}"]
   hourly_billing             = "${var.hourly_billing}"
+  transient                  = "true"
 }
 
