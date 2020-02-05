@@ -4,7 +4,7 @@ variable "hourly_billing" {
 }
 
 variable "datacenter" {
-  default = "lon06"
+  default = "seo01"
 }
 
 variable "hostname_prefix"{
