@@ -46,10 +46,12 @@ variable "vm_domain" {
 
 
 variable "ibm_sl_username"{
+  default = ""
 }
 
 
 variable "ibm_sl_api_key"{
+  default = ""
 }
 
 variable "rhn_username"{

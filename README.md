@@ -59,7 +59,7 @@ The following figure illustrates the deployment architecture for the 'OpenShift 
 
     ``` console
       # Clone the repo
-      $ git clone https://github.com/IBM-Cloud/terraform-ibm-openshift.git
+      $ git clone https://github.com/gracehyunjuyang/terraform-ibm-openshift.git
       $ cd terraform-ibm-openshift/
     ```
 
