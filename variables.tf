@@ -24,12 +24,12 @@ variable "infra_count" {
 }
 
 variable "app_count" {
-  default = 1
+  default = 3
 }
 
 variable "storage_count" {
   description = "Set to 0 to configure openshift without glusterfs configuration and 3 or more to configure openshift with glusterfs"
-  default = 0
+  default = 3
 }
 
 variable "ssh_public_key" {
@@ -85,21 +85,21 @@ variable public_vlanid {
 ### Flavors to be changed to actual values in '#...'
 
 variable bastion_flavor {
-  default = "B1_4X16X25"
+  default = "B1_4X16X100"
 }
 
 variable master_flavor {
-   default = "B1_4X16X25"
+   default = "B1_4X16X100"
 }
 
 variable infra_flavor {
-   default = "B1_4X16X25"
+   default = "B1_4X16X100"
 }
 
 variable app_flavor {
-   default = "B1_4X16X25"
+   default = "B1_16X32X100"
 }
 
 variable storage_flavor {
-   default = "B1_4X16X25"
+   default = "B1_4X16X100"
 }

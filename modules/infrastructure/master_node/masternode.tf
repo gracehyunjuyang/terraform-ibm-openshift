@@ -11,7 +11,7 @@ resource "ibm_compute_vm_instance" "masternode" {
   network_speed             = 1000
   local_disk                = "false"
   flavor_key_name           = "${var.master_flavor}"
-  ssh_key_ids               = ["${var.master_ssh_key_ids}"]
+  ssh_key_ids               = "${var.master_ssh_key_ids}"
   private_vlan_id           = "${var.private_vlan_id}"
   public_vlan_id           = "${var.public_vlan_id}"
   public_security_group_ids = ["${ibm_security_group.openshift-master.id}"]
