@@ -17,4 +17,5 @@ resource "ibm_compute_vm_instance" "storagenode" {
   public_security_group_ids = ["${var.storage_node_pub_sg}"]
   private_security_group_ids = ["${var.storage_node_prv_sg}"]
   hourly_billing             = "${var.hourly_billing}"
+  transient                 = "true"
 }

@@ -52,5 +52,6 @@ resource "ibm_compute_vm_instance" "bastion" {
   public_security_group_ids = ["${ibm_security_group.openshift-bastion.id}"]
   private_security_group_ids = ["${ibm_security_group.openshift-bastion.id}"]
   hourly_billing            = "${var.hourly_billing}"
+  transient                 = "true"
 }
 

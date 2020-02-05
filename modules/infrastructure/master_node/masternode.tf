@@ -17,6 +17,7 @@ resource "ibm_compute_vm_instance" "masternode" {
   public_security_group_ids = ["${ibm_security_group.openshift-master.id}"]
   private_security_group_ids = ["${ibm_security_group.openshift-master.id}"]
   hourly_billing             = "${var.hourly_billing}"
+  transient                 = "true"
 }
 
 
